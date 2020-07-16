@@ -35,3 +35,4 @@ unstable equilibrium situation
 ** <a name="ref_mal">\[2\]</a> ** *"Norton's slippery slope"*, D. B. Malament, *Philosophy of Science* **75**, 799-816 (2008)</br>
 ** <a name="ref_nort">\[3\]</a> ** *"Causation as folk science"*, J. D. Norton, *Philosophers' Imprint* **3** (2003) and
 *"The dome: An unexpectedly simple failure of determinism"*, J. D. Norton, *Philosophy of Science* **75**, 786-798 (2008)</br>
+
