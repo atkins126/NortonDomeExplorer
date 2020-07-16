@@ -16,8 +16,7 @@ is quite simple. Imagine a hill (or mound) with a shape such that a point mass l
 on the apex (where it has a zero velocity) may roll downward following the hill's curvature 
 exactly due to the downward gravitational pull. The shape of the hill is given by the 
 equation:
-![DomeEquation](equations/DomeEquation.png){:height="50%" width="50%"}
-
+<img src="equations/DomeEquation.png" width=50% height=50%>
 
 This appears as an innocent example of an
 unstable equilibrium situation
