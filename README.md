@@ -33,7 +33,7 @@ a probability to the different solutions of this dynamic problem.[\[1\]](#ref_DS
 <br />
 <br />
 The Norton Dome problem can be generalized to entire family of surfaces of the shape:
-<img src="equations/MalamentEquation.png" width=30% height=30% />
+<img src="equations/MalamentEquation.png" width=50% height=50% />
 
 
 ## Usage:
@@ -44,15 +44,15 @@ from [source](source/) using a [Delphi-compiler](https://www.embarcadero.com/pro
 ### Running the program
 1. Start the program
 2. In the *Screen* section select:
-  * the initial conditions: (R0,R1) or (R0,V0)
-  * and set the ranges as Point 1 (R0) and Point 2 (R1 or V0)
-  * the alpha-power of the general Malament-mound formalism 
-	(Norton Dome: alpha=0.5)
-  * the time-step DeltaT
-  * the number of iterations
+    * the initial conditions: (R0,R1) or (R0,V0)
+    * and set the ranges as Point 1 (R0) and Point 2 (R1 or V0)
+    * the alpha-power of the general Malament-mound formalism 
+	   (Norton Dome: alpha=0.5)
+    * the time-step DeltaT
+    * the number of iterations
 3. In the *Run Options* section:
-	* press *Run Simulation* (a progressbar shows the progress of the simulation)
-    * press *Draw T* to visualise the delay times for all initial conditions 	
+	1. press *Run Simulation* (a progressbar shows the progress of the simulation)
+    2. press *Draw T* to visualise the delay times for all initial conditions 	
 
 
 
