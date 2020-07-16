@@ -16,13 +16,44 @@ is quite simple. Imagine a hill (or mound) with a shape such that a point mass l
 on the apex (where it has a zero velocity) may roll downward following the hill's curvature 
 exactly due to the downward gravitational pull. The shape of the hill is given by the 
 equation:
-<center> <img src="equations/DomeEquation.png" width=50% height=50% /></center>
+<img src="equations/DomeEquation.png" width=30% height=30% />
 
-This appears as an innocent example of an
-unstable equilibrium situation
+This appears as an innocent example of an unstable equilibrium situation, however,
+this shape is chosen such that the initial value problem is not 
+[Lipschitz-continuous](https://en.wikipedia.org/wiki/Lipschitz_continuity). The mass will 
+stay on the apex forever, or it will start rolling of after any possible delay
+time. Although the latter solutions could be considered as the result of small perturbations,
+this is not the case in this thought experiment. Here, the movement is initiated without
+perturbation giving rise to non-deterministic behaviour in a system which could come straight 
+from a textbook on Newtonian physics.<br />
+<br />
+This non-deterministic behaviour appears to go against the physical intuition of 
+most phycists. To find source of this apparent contradiction, we set out to assign 
+a probability to the different solutions of this dynamic problem.[\[1\]](#ref_DS1)
+<br />
+<br />
+The Norton Dome problem can be generalized to entire family of surfaces of the shape:
+<img src="equations/MalamentEquation.png" width=30% height=30% />
 
 
 ## Usage:
+### Installation
+The program can be either downloaded as [64bit windows binary](bin/) or compiled 
+from [source](source/) using a [Delphi-compiler](https://www.embarcadero.com/products/delphi). 
+
+### Running the program
+1. Start the program
+2. In the *Screen* section select:
+  * the initial conditions: (R0,R1) or (R0,V0)
+  * and set the ranges as Point 1 (R0) and Point 2 (R1 or V0)
+  * the alpha-power of the general Malament-mound formalism 
+	(Norton Dome: alpha=0.5)
+  * the time-step DeltaT
+  * the number of iterations
+3. In the *Run Options* section:
+	* press *Run Simulation* (a progressbar shows the progress of the simulation)
+    * press *Draw T* to visualise the delay times for all initial conditions 	
+
 
 
 
