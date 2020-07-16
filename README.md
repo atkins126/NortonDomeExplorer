@@ -6,7 +6,7 @@ The NortonDomeExplorer was developed for the exploration of such an
 example:[\[1\]](#ref_DS1) the dynamics of a point-mass on Malament-mounds[\[2\]](#ref_mal),
 more specifically the case of the Norton Dome[\[3\]](#ref_nort).
 
-![screenshot](Dome_ScreenShot.png)
+![screenshot](equations/Dome_ScreenShot.png)
 
 
 ## Background: Norton Domes and Malament-mounds
@@ -16,9 +16,7 @@ is quite simple. Imagine a hill (or mound) with a shape such that a point mass l
 on the apex (where it has a zero velocity) may roll downward following the hill's curvature 
 exactly due to the downward gravitational pull. The shape of the hill is given by the 
 equation:
-```math
-x^2+y^2=z^2
-```
+![DomeEquation](equations/DomeEquation.png)
 
 
 This appears as an innocent example of an
