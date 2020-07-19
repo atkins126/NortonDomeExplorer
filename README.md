@@ -75,6 +75,7 @@ delay time T, while observable (real) delay times only have an infinitessimal pr
 <br />
 <br />
 ### Phase space vector field for all Malament's mounds
+
 ![PhaseAni](equations/PhaseSpaceMalAni.gif) 
  
 
