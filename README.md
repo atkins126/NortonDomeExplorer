@@ -19,13 +19,13 @@ equation:
 <img src="equations/DomeEquation.png" width=50% height=50% />
 
 The dynamical problem can also be expressed in terms of the arclength **r(t)**
-<img src="equations/rProblem.png" width=50% height=50% />
+<img src="equations/rProblem.png" width=40% height=40% />
 
 This appears as an innocent example of an unstable equilibrium situation, however,
 this shape is chosen such that the initial value problem is not 
 [Lipschitz-continuous](https://en.wikipedia.org/wiki/Lipschitz_continuity). The mass will 
 stay on the apex forever, or it will start rolling of after any possible delay
-time T. 
+time T.<br /> 
 <img src="equations/Solutions.png" width=50% height=50% />
 
 Although the latter solutions could be considered as the result of small perturbations,
@@ -33,15 +33,14 @@ this is not the case in this thought experiment. Here, the movement is initiated
 perturbation giving rise to non-deterministic behaviour in a system which could come straight 
 from a textbook on Newtonian physics.<br />
 The Norton Dome problem can be generalized to entire family of surfaces of the shape:
-<img src="equations/MalamentEquation.png" width=50% height=50% />
+<img src="equations/MalamentEquation.png" width=50% height=50% /><br/>
 and which look like
 ![MalamentMounds](equations/Mounds.png)
 .
 
-
-
-<br />
-This non-deterministic behaviour goes against the physical intuition of 
+## Conciliating physical intuition and the Norton Dome 
+The non-deterministic behaviour presented by the Norton Dome (and which extends to all members
+of the Malament Mounds) goes against the physical intuition of 
 most physicists. To find the source of this apparent contradiction, we set out to assign 
 a probability to the different solutions of this dynamic problem.[\[1\]](#ref_DS1) 
 Although Norton's dome received much attention by philosophers of science, as simple
