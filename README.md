@@ -61,8 +61,8 @@ mathematical rigorous formalism of non-standard analysis.[\[4\]](#ref_NonSA)
 Making use of the transfer principle of non-standard analysis, we associate 
 infinitesimal initial conditions with real-valued ones which allows us to 
 assign probabilities to the latter by measuring them on the former on the phase space.<br/>
-!<div style="text-align: center">
-[PhaseSpace](equations/PhaseSpace.png)<br />
+<div style="text-align: center">
+![PhaseSpace](equations/PhaseSpace.png)<br />
 Dynamics of the Norton Dome system on the phase space of initial conditions.</div>
 
 
