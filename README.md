@@ -61,20 +61,35 @@ mathematical rigorous formalism of non-standard analysis.[\[4\]](#ref_NonSA)
 Making use of the transfer principle of non-standard analysis, we associate 
 infinitesimal initial conditions with real-valued ones which allows us to 
 assign probabilities to the latter by measuring them on the former on the phase space.<br/>
-
+![PhaseSpace](equations/PhaseSpace.png)
 <p align="center">
-![PhaseSpace](equations/PhaseSpace.png)![PhaseSpace](equations/PhaseSpace.png)
 Dynamics of the Norton Dome system on the phase space of initial conditions.</p>
-
-
+<br />
+The relation of the delay time T as function of the (infinitesimal) initial conditions
+is highly non-linear, with the positive (red) delay times being very localised.
+![DelayDist](NonLinearDelay.png)
+As a result of this behaviour, we find that the trivial solution of the mass remaining
+on the top of the mound forever has a real-valued probability zero. Alternately, a mass
+staying on the top of the mound befor rolling of will do this with an infinitessimal
+delay time T, while observable (real) delay times only have an infinitessimal probability.
+<br />
+<br />
+### Phase space vector field for all Malament's mounds
+![PhaseAni](equations/PhaseSpaceMalAni.gif) 
+ 
 
 
 
 
 ## Usage:
+
 ### Installation
-The program can be either downloaded as [64bit windows binary](bin/) or compiled 
-from [source](source/) using a [Delphi-compiler](https://www.embarcadero.com/products/delphi). 
+* The program can be either downloaded as [64bit windows binary](bin/) or compiled 
+from [source](source/DomeExplorer) using a [Delphi-compiler](https://www.embarcadero.com/products/delphi). 
+* The support program for generating the vector-field of the phase space can be
+compiled from the Fortran [source](source/PhaseSpace). The [gnuplot](http://www.gnuplot.info/) script
+for generating the animation can be found in the same folder.
+
 
 ### Running the program
 1. Start the program
