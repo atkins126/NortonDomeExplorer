@@ -12,7 +12,7 @@ The Norton Dome Explorer.</p>
 In 2003, the philosopher of science John D. Norton presented a thought experiment which exhibits non-deterministic behaviour within the context of Newtonian mechanics.
 The setup is quite simple. Imagine a hill (or mound) with a shape such that a point mass located on the apex (where it has a zero velocity) may roll downward following the hill's curvature exactly due to the downward gravitational pull.
 The shape of the hill is given by the equation:
-<img src="images/DomeEquation.png" width=40% height=40% style="display: block; margin-left: auto; margin-right: auto;"/>
+<p align="center"><img src="images/DomeEquation.png" width=40% height=40% /></p>
 
 The dynamical problem can also be expressed in terms of the arc length **r(t)**
 <img src="images/rProblem.png" width=40% height=40% alignment="center"/>
