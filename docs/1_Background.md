@@ -6,10 +6,10 @@
     1.3. [Phase Space vector field](#background_Phase)<br />
 
 # <a id='background'></a> 1. Norton's dome and Malament's mounds  
-<div style="position: relative; top: -200px; text-align: right; font-size: smaller; width: 100%; " >
+<p style="position: relative; top: -200px; text-align: right; font-size: smaller; width: 100%; " >
     
 [Top](#Top) 
-</div>
+</p>
 
 
 ##  <a id='background_Intro'></a> 1.1. Introduction
