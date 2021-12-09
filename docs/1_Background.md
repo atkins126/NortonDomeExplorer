@@ -1,13 +1,16 @@
 <a id='Top'></a>[Back to main page](../README.md)
 
-  1. [Norton's dome & Malament's Mounds](#background)
-    1.1. [Introduction](#background_Intro)
-    1.2. [Assigning probabilities](#background_Prob)
-    1.3. [Phase Space vector field](#background_Phase)
+1. [Norton's dome & Malament's Mounds](#background)<br />
+    1.1. [Introduction](#background_Intro)<br />
+    1.2. [Assigning probabilities](#background_Prob)<br />
+    1.3. [Phase Space vector field](#background_Phase)<br />
 
 
 # <a id='background'></a> 1. Norton's dome and Malament's mounds  
-<p align="right">[Top](#Top)</p>
+<div style="text-align: right; font-size: smaller" >
+
+[Top](#Top)
+</div>
 
 ##  <a id='background_Intro'></a> 1.1. Introduction
 In 2003, the philosopher of science John D. Norton presented a thought experiment which exhibits non-deterministic behaviour 
@@ -51,14 +54,14 @@ This prompted us to develop this program. Some results can be seen in [\[1\]](#r
 
 Our assignment of probabilities to solutions of the differential equation works is based on a measure of the phase space of solutions 
 to the difference equations in the Alpha-limit. (This is possible because the map from the latter to the former is many-to-one.)
-![PhaseSpace](images/PhaseSpace.png)
+![PhaseSpace](../images/PhaseSpace.png)
 <p align="center" style="font-size:smaller" width=60%>
 Dynamics of the discretized version of Norton's dome system on the phase space of initial conditions.</p>
 <br />
 
 We found that the relation of the delay time T as function of the (infinitesimal) initial conditions is highly non-linear, with the positive 
 (red) delay times being very localised.
-![DelayDist](images/NonLinearDelay.png)
+![DelayDist](../images/NonLinearDelay.png)
 <p align="center" style="font-size:smaller" width=60%>
 Dependence of T on R<sub>1</sub> at a constant value of R<sub>0</sub>.</p>
 <br />
@@ -71,8 +74,8 @@ The regular solution with T=0, which describes that the mass slides off without 
 
 ## <a id='background_Phase'></a> 1.3. Phase space vector field for all Malament's mounds
 
-![PhaseAni](images/PhaseSpaceMalAni.gif) 
+![PhaseAni](../images/PhaseSpaceMalAni.gif) 
 <p align="center" style="font-size:smaller" width=60%>
 Numerical results for the vectorfield on the phase-space for varying power
-<b>a</b> of the Malament Mounds. Generated using the PhaseSpace program and gnuplot animation script ([source](source/PhaseSpace)/[binary](bin/).
+<b>a</b> of the Malament Mounds. Generated using the PhaseSpace program and gnuplot animation script ([source](../source/PhaseSpace)/[binary](../bin/).
 </p> 

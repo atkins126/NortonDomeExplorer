@@ -9,15 +9,15 @@ The Norton Dome Explorer GUI.</p>
 <br />
 
 ### Table of content
-   1. [Norton's dome & Malament's Mounds](docs/1_Background.md#background)<br />
-      1.1. [Introduction](#background_Intro) <br />
+1. [Norton's dome & Malament's Mounds](docs/1_Background.md#background)<br />
+    1.1. [Introduction](#background_Intro) <br />
     1.2. [Assigning probabilities](#background_Prob)<br />
     1.3. [Phase Space vector field](#background_Phase)<br />
-  2. [Usage](#)<br />
+2. [Usage](#)<br />
     2.1. [Installation](#)<br />
     2.2. [Users manual](#)<br />
-  3. [References](#)<br />
-  4. [Acknowledgment](#)<br />
+3. [References](#)<br />
+4. [Acknowledgment](#)<br />
 
 
 
