@@ -36,6 +36,7 @@ from a textbook on Newtonian physics.<br />
 Norton's dome problem can be generalized to an entire family of surfaces of the shape:
 <p align="center"><img src="../images/MalamentEquation.png" width=30% height=30% /></p>
 and which look like
+
 ![MalamentMounds](../images/Mounds.png)
 <p align="center" width=60%>
 Cross-section of Malament's mounds for various values of the power <b>a</b>. The two limiting cases are 
@@ -82,5 +83,7 @@ The regular solution with T=0, which describes that the mass slides off without 
 ![PhaseAni](../images/PhaseSpaceMalAni.gif) 
 <p align="center" width=60%>
 Numerical results for the vectorfield on the phase-space for varying power
-<b>a</b> of the Malament Mounds. Generated using the PhaseSpace program and gnuplot animation script ([source](../source/PhaseSpace)/[binary](../bin/).
+<b>a</b> of the Malament Mounds. Generated using the PhaseSpace program and gnuplot animation script ( 
+[source](../source/PhaseSpace/) / [binary](../bin/)
+).
 </p> 
