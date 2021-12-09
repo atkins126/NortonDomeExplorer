@@ -5,11 +5,11 @@
     1.2. [Assigning probabilities](#background_Prob)<br />
     1.3. [Phase Space vector field](#background_Phase)<br />
 
-<div style="text-align: right; font-size: smaller; width: 100%;" >
+# <a id='background'></a> 1. Norton's dome and Malament's mounds  <div style="text-align: right; font-size: smaller; width: 100%;" >
 
 [Top](#Top)
 </div>
-# <a id='background'></a> 1. Norton's dome and Malament's mounds  
+
 
 ##  <a id='background_Intro'></a> 1.1. Introduction
 In 2003, the philosopher of science John D. Norton presented a thought experiment which exhibits non-deterministic behaviour 
