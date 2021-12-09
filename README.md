@@ -9,9 +9,9 @@ The Norton Dome Explorer GUI.</p>
 <br />
 
 
-1. A list 
-	i. A sublist 
-		c. A sub sub list 
+1. A list <br>
+	i. A sublist <br> 
+		c. A sub sub list <br>
 
 
 ### Table of content
