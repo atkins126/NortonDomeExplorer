@@ -7,7 +7,8 @@
 
 # <a id='background'></a> 1. Norton's dome and Malament's mounds  
 <div ALIGN="right"  > 
-    [Top](#Top)  
+    
+[Top](#Top)  
 </div>
 
 
