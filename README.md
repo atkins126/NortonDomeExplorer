@@ -3,16 +3,19 @@ Classical Newtonian mechanics is generally considered a prime example of a deter
 It is however possible to construct systems within the confines of Newtonian mechanics which appear to be indeterministic.
 The NortonDomeExplorer was developed for the exploration of the discretized version of such an example[\[1\]](#ref_DS1): the dynamics of a point mass on Malament's mounds[\[2\]](#ref_mal), including the special case of Norton's dome[\[3\]](#ref_nort).
 
-![screenshot](equations/Dome_ScreenShot.png)
+![screenshot](images/Dome_ScreenShot.png)
+<p align="center" style="font-size:smaller">
+The Norton Dome Explorer.</p>
+<br />
 
 ## Background: Norton's dome and Malament's mounds
 In 2003, the philosopher of science John D. Norton presented a thought experiment which exhibits non-deterministic behaviour within the context of Newtonian mechanics.
 The setup is quite simple. Imagine a hill (or mound) with a shape such that a point mass located on the apex (where it has a zero velocity) may roll downward following the hill's curvature exactly due to the downward gravitational pull.
 The shape of the hill is given by the equation:
-<img src="equations/DomeEquation.png" width=50% height=50% />
+<img src="images/DomeEquation.png" width=40% height=40% style="display: block; margin-left: auto; margin-right: auto;"/>
 
 The dynamical problem can also be expressed in terms of the arc length **r(t)**
-<img src="equations/rProblem.png" width=40% height=40% />
+<img src="images/rProblem.png" width=40% height=40% alignment="center"/>
 
 This appears to be an innocent example of an unstable equilibrium situation, however, the dome's shape is chosen such that the initial value problem is not 
 [Lipschitz-continuous](https://en.wikipedia.org/wiki/Lipschitz_continuity).
