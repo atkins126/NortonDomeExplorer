@@ -1,24 +1,36 @@
-# <a id='background'></a> 1. Norton's dome and Malament's mounds  [Top](#Top)
+<a id='Top'></a>[Back to main page](../README.md)
+
+  1. [Norton's dome & Malament's Mounds](#background)
+    1.1. [Introduction](#background_Intro)
+    1.2. [Assigning probabilities](#background_Prob)
+    1.3. [Phase Space vector field](#background_Phase)
+
+
+# <a id='background'></a> 1. Norton's dome and Malament's mounds  
+<p align="right">[Top](#Top)</p>
 
 ##  <a id='background_Intro'></a> 1.1. Introduction
-In 2003, the philosopher of science John D. Norton presented a thought experiment which exhibits non-deterministic behaviour within the context of Newtonian mechanics.
-The setup is quite simple. Imagine a hill (or mound) with a shape such that a point mass located on the apex (where it has a zero velocity) may roll downward following the hill's curvature exactly due to the downward gravitational pull.
-The shape of the hill is given by the equation:
-<p align="center"><img src="images/DomeEquation.png" width=40% height=40% /></p>
+In 2003, the philosopher of science John D. Norton presented a thought experiment which exhibits non-deterministic behaviour 
+within the context of Newtonian mechanics. The setup is quite simple. Imagine a hill (or mound) with a shape such that a point 
+mass located on the apex (where it has a zero velocity) may roll downward following the hill's curvature exactly due to the 
+downward gravitational pull. The shape of the hill is given by the equation:
+<p align="center"><img src="../images/DomeEquation.png" width=40% height=40% /></p>
 
 The dynamical problem can also be expressed in terms of the arc length **r(t)**
-<p align="center"><img src="images/rProblem.png" width=30% height=30% alignment="center"/></p>
+<p align="center"><img src="../images/rProblem.png" width=30% height=30% alignment="center"/></p>
 
-This appears to be an innocent example of an unstable equilibrium situation, however, the dome's shape is chosen such that the initial value problem is not 
-[Lipschitz-continuous](https://en.wikipedia.org/wiki/Lipschitz_continuity).
-As a result, there is a continuum of solutions: the mass may stay at the apex forever, or it may start rolling of after any possible delay time T.<br /> 
-<p align="center"><img src="images/Solutions.png" width=40% height=40% /></p>
+This appears to be an innocent example of an unstable equilibrium situation, however, the dome's shape is chosen such that 
+the initial value problem is not [Lipschitz-continuous](https://en.wikipedia.org/wiki/Lipschitz_continuity). As a result, 
+there is a continuum of solutions: the mass may stay at the apex forever, or it may start rolling of after any possible 
+delay time T.<br /> 
+<p align="center"><img src="../images/Solutions.png" width=40% height=40% /></p>
 
-Although the latter solutions could be considered as the result of small perturbations, just as in the case of deterministic systems with an unstable equilibrium, no perturbation is required in this thought experiment.
-Here, the movement is initiated spontaneously, without any perturbation, giving rise to non-deterministic behaviour in a system that looks like it could come straight 
+Although the latter solutions could be considered as the result of small perturbations, just as in the case of deterministic 
+systems with an unstable equilibrium, no perturbation is required in this thought experiment. Here, the movement is initiated 
+spontaneously, without any perturbation, giving rise to non-deterministic behaviour in a system that looks like it could come straight 
 from a textbook on Newtonian physics.<br />
 Norton's dome problem can be generalized to an entire family of surfaces of the shape:
-<p align="center"><img src="images/MalamentEquation.png" width=50% height=50% /></p>
+<p align="center"><img src="../images/MalamentEquation.png" width=50% height=50% /></p>
 and which look like
 ![MalamentMounds](images/Mounds.png)
 <p align="center" style="font-size:smaller" width=60%>
