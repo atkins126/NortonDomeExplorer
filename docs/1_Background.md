@@ -85,6 +85,7 @@ The regular solution with T=0, which describes that the mass slides off without 
 <div align="center" width=60%>
 Numerical results for the vectorfield on the phase-space for varying power
 <b>a</b> of the Malament Mounds. Generated using the PhaseSpace program and gnuplot animation script ( 
+
 [source](../source/PhaseSpace/) , 
 [binary](../bin/)
 ).
