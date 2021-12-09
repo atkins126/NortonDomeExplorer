@@ -8,6 +8,12 @@ The NortonDomeExplorer was developed for the exploration of the discretized vers
 The Norton Dome Explorer GUI.</p>
 <br />
 
+
+1.
+	2.
+		3.
+
+
 ### Table of content
    1. [Norton's dome & Malament's Mounds](docs/1_Background.md#background)
       1.1. [Introduction](#background_Intro)
