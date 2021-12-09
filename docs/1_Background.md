@@ -16,28 +16,30 @@ In 2003, the philosopher of science John D. Norton presented a thought experimen
 within the context of Newtonian mechanics. The setup is quite simple. Imagine a hill (or mound) with a shape such that a point 
 mass located on the apex (where it has a zero velocity) may roll downward following the hill's curvature exactly due to the 
 downward gravitational pull. The shape of the hill is given by the equation:
-<p align="center"><img src="../images/DomeEquation.png" width=40% height=40% /></p>
+<p align="center"> <img src="../images/DomeEquation.png" width=30% height=30% /> </p>
 
 The dynamical problem can also be expressed in terms of the arc length **r(t)**
 <p align="center"><img src="../images/rProblem.png" width=30% height=30% alignment="center"/></p>
 
 This appears to be an innocent example of an unstable equilibrium situation, however, the dome's shape is chosen such that 
-the initial value problem is not [Lipschitz-continuous](https://en.wikipedia.org/wiki/Lipschitz_continuity). As a result, 
+the initial value problem is not 
+[Lipschitz-continuous](https://en.wikipedia.org/wiki/Lipschitz_continuity)
+. As a result, 
 there is a continuum of solutions: the mass may stay at the apex forever, or it may start rolling of after any possible 
 delay time T.<br /> 
-<p align="center"><img src="../images/Solutions.png" width=40% height=40% /></p>
+<p align="center"><img src="../images/Solutions.png" width=30% height=30% /></p>
 
 Although the latter solutions could be considered as the result of small perturbations, just as in the case of deterministic 
 systems with an unstable equilibrium, no perturbation is required in this thought experiment. Here, the movement is initiated 
 spontaneously, without any perturbation, giving rise to non-deterministic behaviour in a system that looks like it could come straight 
 from a textbook on Newtonian physics.<br />
 Norton's dome problem can be generalized to an entire family of surfaces of the shape:
-<p align="center"><img src="../images/MalamentEquation.png" width=50% height=50% /></p>
+<p align="center"><img src="../images/MalamentEquation.png" width=30% height=30% /></p>
 and which look like
-![MalamentMounds](images/Mounds.png)
-<p align="center" width=60%><small>
+![MalamentMounds](../images/Mounds.png)
+<p align="center" width=60%>
 Cross-section of Malament's mounds for various values of the power <b>a</b>. The two limiting cases are 
-indicated by the dashed lines.</small></p>
+indicated by the dashed lines.</p>
 <div ALIGN="right"  > 
     
 [Top](#Top)  </div>
@@ -56,15 +58,15 @@ This prompted us to develop this program. Some results can be seen in [\[1\]](#r
 Our assignment of probabilities to solutions of the differential equation works is based on a measure of the phase space of solutions 
 to the difference equations in the Alpha-limit. (This is possible because the map from the latter to the former is many-to-one.)
 ![PhaseSpace](../images/PhaseSpace.png)
-<p align="center" width=60%><small>
-Dynamics of the discretized version of Norton's dome system on the phase space of initial conditions.<small></p>
+<p align="center" width=60%>
+Dynamics of the discretized version of Norton's dome system on the phase space of initial conditions.</p>
 <br />
 
 We found that the relation of the delay time T as function of the (infinitesimal) initial conditions is highly non-linear, with the positive 
 (red) delay times being very localised.
 ![DelayDist](../images/NonLinearDelay.png)
-<p align="center" width=60%><small>
-Dependence of T on R<sub>1</sub> at a constant value of R<sub>0</sub>.</small></p>
+<p align="center" width=60%>
+Dependence of T on R<sub>1</sub> at a constant value of R<sub>0</sub>.</p>
 <br />
 
 As a result of this, we found that regular solutions with any observable delay time have zero probability.
@@ -78,7 +80,7 @@ The regular solution with T=0, which describes that the mass slides off without 
 ## <a id='background_Phase'></a> 1.3. Phase space vector field for all Malament's mounds
 
 ![PhaseAni](../images/PhaseSpaceMalAni.gif) 
-<p align="center" width=60%><small>
+<p align="center" width=60%>
 Numerical results for the vectorfield on the phase-space for varying power
-<b>a</b> of the Malament Mounds. Generated using the PhaseSpace program and gnuplot animation script</small> ([source](../source/PhaseSpace)/[binary](../bin/).
+<b>a</b> of the Malament Mounds. Generated using the PhaseSpace program and gnuplot animation script ([source](../source/PhaseSpace)/[binary](../bin/).
 </p> 
