@@ -5,11 +5,11 @@
     1.2. [Assigning probabilities](#background_Prob)<br />
     1.3. [Phase Space vector field](#background_Phase)<br />
 
-# <a id='background'></a> 1. Norton's dome and Malament's mounds  
 <div ALIGN="right"  > 
     
 [Top](#Top)  
 </div>
+# <a id='background'></a> 1. Norton's dome and Malament's mounds  
 
 
 ##  <a id='background_Intro'></a> 1.1. Introduction
