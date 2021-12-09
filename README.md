@@ -8,22 +8,16 @@ The NortonDomeExplorer was developed for the exploration of the discretized vers
 The Norton Dome Explorer GUI.</p>
 <br />
 
-
-1. A list <br>
-	i. A sublist <br> 
-		c. A sub sub list <br>
-
-
 ### Table of content
-   1. [Norton's dome & Malament's Mounds](docs/1_Background.md#background)
-      1.1. [Introduction](#background_Intro)
-    1.2. [Assigning probabilities](#background_Prob)
-    1.3. [Phase Space vector field](#background_Phase)
-  2. [Usage](#)
-    2.1. [Installation](#)
-    2.2. [Users manual](#)
-  3. [References](#)
-  4. [Acknowledgment](#)
+   1. [Norton's dome & Malament's Mounds](docs/1_Background.md#background)<br />
+      1.1. [Introduction](#background_Intro) <br />
+    1.2. [Assigning probabilities](#background_Prob)<br />
+    1.3. [Phase Space vector field](#background_Phase)<br />
+  2. [Usage](#)<br />
+    2.1. [Installation](#)<br />
+    2.2. [Users manual](#)<br />
+  3. [References](#)<br />
+  4. [Acknowledgment](#)<br />
 
 
 
