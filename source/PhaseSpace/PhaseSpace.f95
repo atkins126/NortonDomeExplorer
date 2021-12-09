@@ -1,9 +1,10 @@
-!++++++++++++++++++++++++++++++++++++++++++++++++++++
+!!++++++++++++++++++++++++++++++++++++++++++++++++++++
 !> \brief Small program to generate histogram plots of the flow in the dome-universe.
 !!
 !! A fortran95 program
-!! By Danny Vanpoucke
+!! By Danny E.P. Vanpoucke
 !! (c) 2020 https:\\dannyvanpoucke.be
+!! Source distributed at https://github.com/DannyVanpoucke/NortonDomeExplorer
 !<--------------------------------------------------
 program histogramGenerator
   implicit none
@@ -28,14 +29,14 @@ program histogramGenerator
 
 
   write(*,*) "Small program to create histogram-map of the N-dome"
-  alpha=0.5_R_quad
+  alpha=0.5_R_quad ! the power a in the manuscript, not the alpha from alpha-theory
   dt=0.01_R_quad
   MaxIter=1
 
   !write(*,*) "alpha       :"
   !read(*,*) alpha
   !alpha=alpha*1.0_R_quad
-  write(*,*) "alpha is taken for each value from 0.01 to 0.99."
+  write(*,*) "The power 'a' is taken for each value from 0.01 to 0.99."
 
 
   write(*,*) "R0 min and max :"

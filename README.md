@@ -26,11 +26,11 @@ Although the latter solutions could be considered as the result of small perturb
 Here, the movement is initiated spontaneously, without any perturbation, giving rise to non-deterministic behaviour in a system that looks like it could come straight 
 from a textbook on Newtonian physics.<br />
 Norton's dome problem can be generalized to an entire family of surfaces of the shape:
-<p align="center"><img src="images/MalamentEquation.png" width=40% height=40% /></p><br/>
+<p align="center"><img src="images/MalamentEquation.png" width=50% height=50% /></p>
 and which look like
 ![MalamentMounds](images/Mounds.png)
-<p align="center" style="font-size:smaller" width=80%>
-Cross-section of Malament's mounds for various values of the power **a**. The two limiting cases are 
+<p align="center" style="font-size:smaller" width=60%>
+Cross-section of Malament's mounds for various values of the power <b>a</b>. The two limiting cases are 
 indicated by the dashed lines.</p>
 
 
@@ -45,14 +45,19 @@ Before considering the Alpha-limit, we had to study the difference equations wit
 Since there is no known solution for the discrete version of Norton's dome and Malament's mounds, an important component of our study consisted of numerical results.
 This prompted us to develop this program. Some results can be seen in [\[1\]](#ref_DS1).
 
-Our assignment of probabilities to solutions of the differential equation works is based on a measure of the phase space of solutions to the difference equations in the Alpha-limit. (This is possible because the map from the latter to the former is many-to-one.)
+Our assignment of probabilities to solutions of the differential equation works is based on a measure of the phase space of solutions 
+to the difference equations in the Alpha-limit. (This is possible because the map from the latter to the former is many-to-one.)
 ![PhaseSpace](images/PhaseSpace.png)
-<p align="center">
+<p align="center" style="font-size:smaller" width=60%>
 Dynamics of the discretized version of Norton's dome system on the phase space of initial conditions.</p>
 <br />
 
-We found that the relation of the delay time T as function of the (infinitesimal) initial conditions is highly non-linear, with the positive (red) delay times being very localised.
+We found that the relation of the delay time T as function of the (infinitesimal) initial conditions is highly non-linear, with the positive 
+(red) delay times being very localised.
 ![DelayDist](images/NonLinearDelay.png)
+<p align="center" style="font-size:smaller" width=60%>
+Dependence of T on R<sub>1</sub> at a constant value of R<sub>0</sub>.</p>
+<br />
 
 As a result of this, we found that regular solutions with any observable delay time have zero probability.
 The regular solution with T=0, which describes that the mass slides off without any observable delay, has unit probability.

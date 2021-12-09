@@ -1,8 +1,8 @@
 # run as gnuplot plotVector_animate.gpl
 # Set the output to a png file
 #set terminal png enhanced font 'Verdana,40' size 2500,2500
-set terminal gif animate delay 10 enhanced font 'Verdana,40' size 2500,2500
-#set terminal gif animate delay 10 enhanced font 'Verdana,16' size 800,800
+#set terminal gif animate delay 10 enhanced font 'Verdana,40' size 2500,2500
+set terminal gif animate delay 10 enhanced font 'Verdana,16' size 800,800
 set output 'AnimatedVector.gif'
 #set terminal x11 enhanced font 'Verdana,20' size 800, 800
 set termopt enhanced  # turn on enhanced text mode: accepts Latex
@@ -16,12 +16,13 @@ set ytics ("-0.20" -0.002,"-0.15" -0.0015, "-0.10" -0.001, "-0.05" -0.0005, "0.0
 set key off
 set border 15 lw 5
 
-set label "Vanpoucke \\& Wenmackers 2020 " at screen 0.975, 0.5 center rotate by 90 textcolor rgbcolor "#CCCCCC"
+set label "Vanpoucke \\& Wenmackers 2021 " at screen 0.975, 0.5 center rotate by 90 textcolor rgbcolor "#CCCCCC"
 
 do for [i=1:99]{
 #do for [k=1:9]{
 #  i=k*10
-  tstr=sprintf(' {/Symbol a}=%.2f',i*0.01)
+#  tstr=sprintf(' {/Symbol a}=%.2f',i*0.01)
+  tstr=sprintf(' {a}=%.2f',i*0.01)
   set title tstr
 
   file(i) = sprintf("vectorplot%d.dat",i)
@@ -31,7 +32,8 @@ do for [i=1:99]{
 #do for [k=1:9]{
 #  i=k*10
   j=100-i
-  tstr=sprintf(' {/Symbol a}=%.2f',j*0.01)
+#  tstr=sprintf(' {/Symbol a}=%.2f',j*0.01)
+  tstr=sprintf(' {a}=%.2f',j*0.01)
   set title tstr
   file(j) = sprintf("vectorplot%d.dat",j)
   plot file(j) u 2:1:4:3 with vectors head filled lw 2 lc black
