@@ -17,7 +17,7 @@ The Norton Dome Explorer GUI.</p>
     1.2. [Assigning probabilities](#background_Prob)<br />
     1.3. [Phase Space vector field](#background_Phase)<br />
 2. [Usage](docs/2_Manual.md)<br />
-    2.1. [Installation](docs/2_Manual.md#Instal)<br />
+    2.1. [Installation](docs/2_Manual.md#Install)<br />
     2.2. [Users manual](docs/2_Manual.md#Manual)<br />
 3. [References](docs/3_ReferenceList.md)<br />
 
