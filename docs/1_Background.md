@@ -47,14 +47,15 @@ indicated by the dashed lines.</p>
 
 ## <a id='background_Prob'></a> 1.2. Assigning probabilities to the Norton's dome and Malament's mounds solutions
 Initial value problems in Newtonian physics that are indeterministic due to non-Lipschitz continuity do not even come with a probability distribution.
-We set out to find a natural procedure for assigning probabilities to their solutions[\[1\]](#ref_DS1).
+We set out to find a natural procedure for assigning probabilities to their solutions[\[1\]](3_ReferenceList.md#ref_DS1).
 Since Norton's dome received much attention by philosophers of science, as a simple example of indeterminism in Newtonian mechanics, we have used this toy example and Malament's generalization to develop a method for assigning probabilities to the different solutions.<br />
 
 Our approach starts from a discretization of time, which results in difference equations instead of differential equations.
-This approach is familiar to most physicists, but we have formalized the idea of infinitesimal time steps and perturbations with a recent mathematical formalism: Alpha-theory[\[4\]](#ref_NonSA).
+This approach is familiar to most physicists, but we have formalized the idea of infinitesimal time steps and perturbations with a recent mathematical 
+formalism: Alpha-theory[\[4\]](3_ReferenceList.md#ref_NonSA).
 Before considering the Alpha-limit, we had to study the difference equations with non-infinitesimal time steps and perturbations.
 Since there is no known solution for the discrete version of Norton's dome and Malament's mounds, an important component of our study consisted of numerical results.
-This prompted us to develop this program. Some results can be seen in [\[1\]](#ref_DS1).
+This prompted us to develop this program. Some results can be seen in [\[1\]](3_ReferenceList.md#ref_DS1).
 
 Our assignment of probabilities to solutions of the differential equation works is based on a measure of the phase space of solutions 
 to the difference equations in the Alpha-limit. (This is possible because the map from the latter to the former is many-to-one.)
@@ -84,6 +85,7 @@ The regular solution with T=0, which describes that the mass slides off without 
 <p align="center" width=60%>
 Numerical results for the vectorfield on the phase-space for varying power
 <b>a</b> of the Malament Mounds. Generated using the PhaseSpace program and gnuplot animation script ( 
-[source](../source/PhaseSpace/) / [binary](../bin/)
+[source](../source/PhaseSpace/) , 
+[binary](../bin/)
 ).
 </p> 
