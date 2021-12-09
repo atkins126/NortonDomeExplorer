@@ -5,7 +5,7 @@ The NortonDomeExplorer was developed for the exploration of the discretized vers
 
 ![screenshot](images/Dome_ScreenShot.png)
 <p align="center" style="font-size:smaller">
-The Norton Dome Explorer.</p>
+The Norton Dome Explorer GUI.</p>
 <br />
 
 ## Background: Norton's dome and Malament's mounds
@@ -15,21 +15,24 @@ The shape of the hill is given by the equation:
 <p align="center"><img src="images/DomeEquation.png" width=40% height=40% /></p>
 
 The dynamical problem can also be expressed in terms of the arc length **r(t)**
-<img src="images/rProblem.png" width=40% height=40% alignment="center"/>
+<p align="center"><img src="images/rProblem.png" width=30% height=30% alignment="center"/></p>
 
 This appears to be an innocent example of an unstable equilibrium situation, however, the dome's shape is chosen such that the initial value problem is not 
 [Lipschitz-continuous](https://en.wikipedia.org/wiki/Lipschitz_continuity).
 As a result, there is a continuum of solutions: the mass may stay at the apex forever, or it may start rolling of after any possible delay time T.<br /> 
-<img src="equations/Solutions.png" width=50% height=50% />
+<p align="center"><img src="images/Solutions.png" width=40% height=40% /></p>
 
 Although the latter solutions could be considered as the result of small perturbations, just as in the case of deterministic systems with an unstable equilibrium, no perturbation is required in this thought experiment.
 Here, the movement is initiated spontaneously, without any perturbation, giving rise to non-deterministic behaviour in a system that looks like it could come straight 
 from a textbook on Newtonian physics.<br />
 Norton's dome problem can be generalized to an entire family of surfaces of the shape:
-<img src="equations/MalamentEquation.png" width=50% height=50% /><br/>
+<p align="center"><img src="images/MalamentEquation.png" width=40% height=40% /></p><br/>
 and which look like
-![MalamentMounds](equations/Mounds.png)
-.
+![MalamentMounds](images/Mounds.png)
+<p align="center" style="font-size:smaller" width=80%>
+Cross-section of Malament's mounds for various values of the power **a**. The two limiting cases are 
+indicated by the dashed lines.</p>
+
 
 ## Assigning probabilities to the Norton's dome and Malament's mounds solutions
 Initial value problems in Newtonian physics that are indeterministic due to non-Lipschitz continuity do not even come with a probability distribution.
@@ -43,13 +46,13 @@ Since there is no known solution for the discrete version of Norton's dome and M
 This prompted us to develop this program. Some results can be seen in [\[1\]](#ref_DS1).
 
 Our assignment of probabilities to solutions of the differential equation works is based on a measure of the phase space of solutions to the difference equations in the Alpha-limit. (This is possible because the map from the latter to the former is many-to-one.)
-![PhaseSpace](equations/PhaseSpace.png)
+![PhaseSpace](images/PhaseSpace.png)
 <p align="center">
 Dynamics of the discretized version of Norton's dome system on the phase space of initial conditions.</p>
 <br />
 
 We found that the relation of the delay time T as function of the (infinitesimal) initial conditions is highly non-linear, with the positive (red) delay times being very localised.
-![DelayDist](equations/NonLinearDelay.png)
+![DelayDist](images/NonLinearDelay.png)
 
 As a result of this, we found that regular solutions with any observable delay time have zero probability.
 The regular solution with T=0, which describes that the mass slides off without any observable delay, has unit probability.
@@ -59,7 +62,7 @@ The regular solution with T=0, which describes that the mass slides off without 
 
 ### Phase space vector field for all Malament's mounds
 
-![PhaseAni](equations/PhaseSpaceMalAni.gif) 
+![PhaseAni](images/PhaseSpaceMalAni.gif) 
  
 
 
