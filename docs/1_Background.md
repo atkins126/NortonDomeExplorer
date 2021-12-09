@@ -11,7 +11,6 @@
 
 # <a id='background'></a> 1. Norton's dome and Malament's mounds  
 
-
 ##  <a id='background_Intro'></a> 1.1. Introduction
 In 2003, the philosopher of science John D. Norton presented a thought experiment which exhibits non-deterministic behaviour 
 within the context of Newtonian mechanics. The setup is quite simple. Imagine a hill (or mound) with a shape such that a point 
@@ -36,10 +35,12 @@ Norton's dome problem can be generalized to an entire family of surfaces of the 
 <p align="center"><img src="../images/MalamentEquation.png" width=50% height=50% /></p>
 and which look like
 ![MalamentMounds](images/Mounds.png)
-<p align="center" style="font-size:smaller" width=60%>
+<p align="center" width=60%><small>
 Cross-section of Malament's mounds for various values of the power <b>a</b>. The two limiting cases are 
-indicated by the dashed lines.</p>
-
+indicated by the dashed lines.</small></p>
+<div ALIGN="right"  > 
+    
+[Top](#Top)  </div>
 
 ## <a id='background_Prob'></a> 1.2. Assigning probabilities to the Norton's dome and Malament's mounds solutions
 Initial value problems in Newtonian physics that are indeterministic due to non-Lipschitz continuity do not even come with a probability distribution.
@@ -55,27 +56,29 @@ This prompted us to develop this program. Some results can be seen in [\[1\]](#r
 Our assignment of probabilities to solutions of the differential equation works is based on a measure of the phase space of solutions 
 to the difference equations in the Alpha-limit. (This is possible because the map from the latter to the former is many-to-one.)
 ![PhaseSpace](../images/PhaseSpace.png)
-<p align="center" style="font-size:smaller" width=60%>
-Dynamics of the discretized version of Norton's dome system on the phase space of initial conditions.</p>
+<p align="center" width=60%><small>
+Dynamics of the discretized version of Norton's dome system on the phase space of initial conditions.<small></p>
 <br />
 
 We found that the relation of the delay time T as function of the (infinitesimal) initial conditions is highly non-linear, with the positive 
 (red) delay times being very localised.
 ![DelayDist](../images/NonLinearDelay.png)
-<p align="center" style="font-size:smaller" width=60%>
-Dependence of T on R<sub>1</sub> at a constant value of R<sub>0</sub>.</p>
+<p align="center" width=60%><small>
+Dependence of T on R<sub>1</sub> at a constant value of R<sub>0</sub>.</small></p>
 <br />
 
 As a result of this, we found that regular solutions with any observable delay time have zero probability.
 The regular solution with T=0, which describes that the mass slides off without any observable delay, has unit probability.
 (The trivial solution of the mass remaining at the apex forever has zero probability as well.)
 <br />
-<br />
+<div ALIGN="right"  > 
+    
+[Top](#Top)  </div>
 
 ## <a id='background_Phase'></a> 1.3. Phase space vector field for all Malament's mounds
 
 ![PhaseAni](../images/PhaseSpaceMalAni.gif) 
-<p align="center" style="font-size:smaller" width=60%>
+<p align="center" width=60%><small>
 Numerical results for the vectorfield on the phase-space for varying power
-<b>a</b> of the Malament Mounds. Generated using the PhaseSpace program and gnuplot animation script ([source](../source/PhaseSpace)/[binary](../bin/).
+<b>a</b> of the Malament Mounds. Generated using the PhaseSpace program and gnuplot animation script</small> ([source](../source/PhaseSpace)/[binary](../bin/).
 </p> 

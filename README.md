@@ -4,8 +4,8 @@ It is however possible to construct systems within the confines of Newtonian mec
 The NortonDomeExplorer was developed for the exploration of the discretized version of such an example[\[1\]](#ref_DS1): the dynamics of a point mass on Malament's mounds[\[2\]](#ref_mal), including the special case of Norton's dome[\[3\]](#ref_nort).
 
 ![screenshot](images/Dome_ScreenShot.png)
-<p align="center" style="font-size:smaller">
-The Norton Dome Explorer GUI.</p>
+<p align="center"><small>
+The Norton Dome Explorer GUI.</small></p>
 <br />
 
 ### Table of content
