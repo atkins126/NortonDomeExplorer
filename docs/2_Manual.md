@@ -15,9 +15,9 @@
 
 The two programs developed for the paper *"Assigning probabilities to non-Lipschitz mechanical systems"* ,[\[1\]](3_ReferenceList.md#ref_DS1)
 can be downloaded from this git repository:
- - [NortonDomeExplorer] An object oriented program written in pascal with a simple GUI, which allows you to investigate the discretized version 
+ - **NortonDomeExplorer** An object oriented program written in pascal with a simple GUI, which allows you to investigate the discretized version 
  of the problem (The dynamics of a point-mass placed at in infinitessimal distance from the apex of a Malament's Mound).
- - [PhaseSpace] A small support program written in fortran-95. This can be used to generate the vector-field of the phase space. An additional
+ - **PhaseSpace** A small support program written in fortran-95. This can be used to generate the vector-field of the phase space. An additional
  gnuplot script is provided to combine the results into a single animation.
 
 For both programs, 64-bit windows executables are available as well as their source-code. 
