@@ -67,7 +67,6 @@ your [gnuplot](http://www.gnuplot.info/) installation.
 ![GUI_Layout](../images/NDE_Layout.png)
 <p align="center" width=60%>
 Different parts of the DomeExplorer GUI.</p>
-<div ALIGN="right"  > 
 
 The DomeExplorer comes with a simple Graphical User interface (GUI), which allows one to setup and run simulations, 
 as well as, evaluate and store the results. The GUI contains three major parts:
