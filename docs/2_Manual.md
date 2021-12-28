@@ -70,9 +70,9 @@ Different parts of the DomeExplorer GUI.</p>
 
 The DomeExplorer comes with a simple Graphical User interface (GUI), which allows one to setup and run simulations, 
 as well as, evaluate and store the results. The GUI contains three major parts:
- 1. ** Simulation Settings :** In this panel, specific details of the impending simulation are defined. (*cf.* [Tutorial](#RunningND) 
+ 1. ** Simulation Settings : ** In this panel, specific details of the impending simulation are defined. (*cf.* [Tutorial](#RunningND) 
  for the specific settings and our [paper](3_ReferenceList.md#ref_DS1) for further details.)
- 2. ** Simulation & Processing :** This panel contains a set of buttons related to both running the simulation and presenting
+ 2. ** Simulation & Processing : ** This panel contains a set of buttons related to both running the simulation and presenting
  the results.
  3. ** Plot Area :** The results are graphically presented on the screen in this part. A color scale is included, showing the range
  of values presented.
@@ -95,7 +95,7 @@ investigation into the specifics of the dynamics on Malament-mounds.
 ![GUI_RunA](../images/NDE_Controls.png)
 <p align="center" width=60%>
 Setting up a simulation using the DomeExplorer GUI.</p>
-<div ALIGN="right"  > 
+
 
 ### 2.2.1. Setting up a simulation.
 All settings of a simulation can be found on the *simulation settings panel*, as indicated in the figure above.
