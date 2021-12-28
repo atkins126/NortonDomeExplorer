@@ -133,7 +133,8 @@ Once the settings are selected, the simulation can be run, and results visualise
   *delay time* **T** can be visualised by pressing this button. The *color scale* indicates the largest and smallest values obtained in the entire presented
   phase space.
   8. <b> Draw Flips/Draw Error Code :</b> Support functionality which for each pixel indicates how many times the path starting with these initial conditions 
-  crosses the apex(**Flips**) or if any numerical errors were encountered(**Error Code**: 0=No error, 1=Division by zero, 2=Overflow, 3=Invalid operation, 4=Endposition >10<sup>60</sup>) 
+  crosses the apex(**Flips**) or if any numerical errors were encountered (**Error Code**: 0=No error, 1=Division by zero, 2=Overflow, 
+  3=Invalid operation, 4=Endposition >10<sup>60</sup>) 
   9. <b>Draw Endval/log(EndVal) :</b> Plot the final position (or log thereof) of a path starting with the initial conditions as given by the pixel.
   10. <b> File->Save Image :</b> The image presented in the *Plot Area* can be saved as an image.
 
