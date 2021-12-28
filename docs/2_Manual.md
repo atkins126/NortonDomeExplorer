@@ -127,6 +127,7 @@ Running the simulation and selecting the results to present using the DomeExplor
 
 ### 2.2.2. Running the simulation.
 Once the settings are selected, the simulation can be run, and results visualised using the buttons present on the *Simulation and Processing* Panel.
+
   6. <b> Run Simulation :</b> Pressing this button starts the simulation. Progess of the simulation can be tracked via the progressbar.
   7. <b> Draw T :</b> Once the simulation has finished (The "*Time used*" will be shown, and the *Plot Area* will turn into a grey square.) the results for the  
   *delay time* **T** can be visualised by pressing this button. The *color scale* indicates the largest and smallest values obtained in the entire presented
