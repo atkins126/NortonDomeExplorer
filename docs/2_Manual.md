@@ -99,7 +99,7 @@ Setting up a simulation using the DomeExplorer GUI.</p>
 
 ### 2.2.1. Setting up a simulation.
 All settings of a simulation can be found on the *simulation settings panel*, as indicated in the figure above.
- 1. ** Initial values :** The two initial conditions of the Cauchy problem at hand can be formulated in two ways. Either as the
+ 1.  d ** Initial values :** The two initial conditions of the Cauchy problem at hand can be formulated in two ways. Either as the
  position at time *t=0* and the position after a first timestep (option **R0,R1**, or using the notation of the paper: **R<sub>n,0</sub>,R<sub>n,1</sub>**), or 
  as the position and velocity at *T=0* (option **R0,V0**).<br />
  Depending on the selection, the recurrence relation given in [equation 4](3_ReferenceList.md#ref_DS1): 
@@ -124,7 +124,6 @@ All settings of a simulation can be found on the *simulation settings panel*, as
 ![GUI_RunB](../images/NDE_Simulation.png)
 <p align="center" width=60%>
 Running the simulation and selecting the results to present using the DomeExplorer GUI.</p>
-<div ALIGN="right"  > 
 
 ### 2.2.2. Running the simulation.
 Once the settings are selected, the simulation can be run, and results visualised using the buttons present on the *Simulation and Processing* Panel.
