@@ -70,16 +70,16 @@ Different parts of the DomeExplorer GUI.</p>
 
 The DomeExplorer comes with a simple Graphical User interface (GUI), which allows one to setup and run simulations, 
 as well as, evaluate and store the results. The GUI contains three major parts:
- 1. <b> Simulation Settings : </b> In this panel, specific details of the impending simulation are defined. (*cf.* [Tutorial](#RunningND) 
+ 1. <b> Simulation Settings :</b> In this panel, specific details of the impending simulation are defined. (*cf.* [Tutorial](#RunningND) 
  for the specific settings and our [paper](3_ReferenceList.md#ref_DS1) for further details.)
- 2. ** Simulation & Processing : ** This panel contains a set of buttons related to both running the simulation and presenting
+ 2. <b> Simulation & Processing :</b> This panel contains a set of buttons related to both running the simulation and presenting
  the results.
- 3. ** Plot Area :** The results are graphically presented on the screen in this part. A color scale is included, showing the range
+ 3. <b> Plot Area :</b> The results are graphically presented on the screen in this part. A color scale is included, showing the range
  of values presented.
- 4. ** Menu :** The picture of the results presented in the *Plot Area* can be saved as an image via **File -> Save Image**, 
+ 4. <b> Menu :</b> The picture of the results presented in the *Plot Area* can be saved as an image via **File -> Save Image**, 
  and the program can be terminated either via **File -> Exit Program** or through the close button. The **Help** menu provides access to 
  these online github information pages. 
- 5. ** Information :** Depending on the simulation settings, running the simulation may take a while. To provide a visual feedback to the 
+ 5. <b> Information :</b> Depending on the simulation settings, running the simulation may take a while. To provide a visual feedback to the 
  user (showing the program did not get stuck), a progressbar is provided at the bottom of the *Plot Area*. The time used for the last 
  run simulation is presented below, while the total time for all simulations run in the current session is shown at the top of the screen.
 
@@ -99,7 +99,7 @@ Setting up a simulation using the DomeExplorer GUI.</p>
 
 ### 2.2.1. Setting up a simulation.
 All settings of a simulation can be found on the *simulation settings panel*, as indicated in the figure above.
- 1. ** Initial values :** The two initial conditions of the Cauchy problem at hand can be formulated in two ways. Either as the
+ 1. <b> Initial values :</b> The two initial conditions of the Cauchy problem at hand can be formulated in two ways. Either as the
  position at time *t=0* and the position after a first timestep (option **R0,R1**, or using the notation of the paper: **R<sub>n,0</sub>,R<sub>n,1</sub>**), or 
  as the position and velocity at *T=0* (option **R0,V0**).<br />
  Depending on the selection, the recurrence relation given in [equation 4](3_ReferenceList.md#ref_DS1): 
@@ -107,18 +107,18 @@ All settings of a simulation can be found on the *simulation settings panel*, as
  initial positions directly, or an initial position and a velocity, which is transformed into two initial positions. In practice, for both modes the
  same recurrence relation is solved, however, the graphical representation in the *Plot Area* will either present initial pairs **(R0,R1)** or **(R0,V0)**
  depending on the mode.  
- 2. ** Point 1/2 minimum and maximum values :** The DomeExplorer evaluates the recurrence relation for each initial value pair corresponding with a single 
+ 2. <b> Point 1/2 minimum and maximum values :</b> The DomeExplorer evaluates the recurrence relation for each initial value pair corresponding with a single 
  pixel in the 500x500 pixel *Plot Area* (*i.e.* 250 000 initial value pairs are considered). *Point 1* refers to **R0**, while *Point 2* refers to either **R1** or **V0**.
  For each pixel, the initial value pair is calculated as a linear 
  grid ranging in \[min,max\], as provided by the user. **Note:** As the pair **(R0,R1)=(0,0)** is the singular solution of the Cauchy problem, and the only point 
  with an infinite T value (or within the context of the DomeExplorer a value of DeltaT\*(Maximum \# Iterations) ), it is best to explicitly exclude it from the 
  simulations as it will dominate the color scale, and one ends up with a black *Plot Area* with a single red pixel.
- 3. ** "a" value :** The power in the Cauchy problem of the Malament-mound, given by [equation 1](3_ReferenceList.md#ref_DS1). Values are limited to the 
+ 3. <b> "a" value :</b> The power in the Cauchy problem of the Malament-mound, given by [equation 1](3_ReferenceList.md#ref_DS1). Values are limited to the 
  range \[0,1\]. The special case of the Norton Dome is recovered by setting **a=0.5** 
- 4. ** DeltaT :** This is the discrete time step (also *1/n*, *cf.* [paper](3_ReferenceList.md#ref_DS1)) used in the recurrence relation. When modifying this
+ 4. <b> DeltaT :</b> This is the discrete time step (also *1/n*, *cf.* [paper](3_ReferenceList.md#ref_DS1)) used in the recurrence relation. When modifying this
  timestep it is important to note that there exists a scaling relation between the timestep **R<sub>n</sub>** values: n<sup>-2/(1-a)</sup>. In practice this means that 
  for the Norton Dome (a=1/2), if one reduces DeltaT by a factor of 10 and the maximum **R0,R1** values by a factor of 10 000, the exact same picture is obtained.
- 5. ** Maximum \# Iterations :** The maximum number of iterations of the recurrence relation that are being calculated. Higher values provide a more accurate estimate 
+ 5. <b> Maximum \# Iterations :</b> The maximum number of iterations of the recurrence relation that are being calculated. Higher values provide a more accurate estimate 
  of the *delay time* **T**, corresponding to the time the mass starts sliding of the mound. 
  
 ![GUI_RunB](../images/NDE_Simulation.png)
@@ -127,13 +127,13 @@ Running the simulation and selecting the results to present using the DomeExplor
 
 ### 2.2.2. Running the simulation.
 Once the settings are selected, the simulation can be run, and results visualised using the buttons present on the *Simulation and Processing* Panel.
-  6. **Run Simulation :** Pressing this button starts the simulation. Progess of the simulation can be tracked via the progressbar.
-  7. **Draw T :** Once the simulation has finished (The "*Time used*" will be shown, and the *Plot Area* will turn into a grey square.) the results for the  
+  6. <b> Run Simulation :</b> Pressing this button starts the simulation. Progess of the simulation can be tracked via the progressbar.
+  7. <b> Draw T :</b> Once the simulation has finished (The "*Time used*" will be shown, and the *Plot Area* will turn into a grey square.) the results for the  
   *delay time* **T** can be visualised by pressing this button. The *color scale* indicates the largest and smallest values obtained in the entire presented
   phase space.
-  8. **Draw Flips/Draw Error Code :** Support functionality which for each pixel indicates how many times the path starting with these initial conditions 
+  8. <b> Draw Flips/Draw Error Code :</b> Support functionality which for each pixel indicates how many times the path starting with these initial conditions 
   crosses the apex(**Flips**) or if any numerical errors were encountered(**Error Code**: 0=No error, 1=Division by zero, 2=Overflow, 3=Invalid operation, 4=Endposition >10<sup>60</sup>) 
-  9. **Draw Endval/log(EndVal) :** Plot the final position (or log thereof) of a path starting with the initial conditions as given by the pixel.
-  10. **File->Save Image :** The image presented in the *Plot Area* can be saved as an image.
+  9. <b>Draw Endval/log(EndVal) :</b> Plot the final position (or log thereof) of a path starting with the initial conditions as given by the pixel.
+  10. <b> File->Save Image :</b> The image presented in the *Plot Area* can be saved as an image.
 
 
