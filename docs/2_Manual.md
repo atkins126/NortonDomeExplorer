@@ -114,7 +114,7 @@ All settings of a simulation can be found on the *simulation settings panel*, as
  3. <b> *a* value:</b> The power in the initial value problem of Malament's mound, given by [equation 1](3_ReferenceList.md#ref_DS1). Values are limited to the 
  range \]0,1\[. The special case of Norton's Dome is obtained by setting ***a*=0.5**.
  4. <b> Delta*T*:</b> This is the discrete time step (also 1/*n*, *cf.* [paper](3_ReferenceList.md#ref_DS1)) used in the recurrence relation. When modifying this
- variable, it is important to note that there exists a scaling relation between the time step (1/*n*) and the **R<sub>n</sub>** values: *n*<sup>-2/(1-*a*)</sup>. 
+ variable, it is important to note that there exists a scaling relation between the time step (1/*n*) and the ***R*<sub>*n*</sub>** values: *n*<sup>-2/(1-*a*)</sup>. 
  In practice, this means that for Norton's dome (*a*=1/2), if one reduces Delta*T* by a factor of 10 and the maximum **R0,R1** values by a factor of 10 000, 
  the exact same picture is obtained.
  5. <b> Maximum \# Iterations:</b> The maximum number of iterations of the recurrence relation that are being calculated. Higher values provide a more accurate estimate 
