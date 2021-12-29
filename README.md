@@ -12,7 +12,7 @@ The Norton Dome Explorer GUI.</p>
 
 ### Table of content
 
-1. [Norton's dome & Malament's Mounds](docs/1_Background.md#background)<br />
+1. [Norton's dome & Malament's mounds](docs/1_Background.md#background)<br />
     1.1. [Introduction](#background_Intro) <br />
     1.2. [Assigning probabilities](#background_Prob)<br />
     1.3. [Phase Space vector field](#background_Phase)<br />
@@ -22,7 +22,7 @@ The Norton Dome Explorer GUI.</p>
 3. [References](docs/3_ReferenceList.md)<br />
 
 ### Citations
-If you use the NortonDomeExplorer in your research we would appreciate a citation to the appropriate paper:
+If you use the NortonDomeExplorer in your research, we would appreciate a citation to the corresponding publication:
  - *"Assigning probabilities to non-Lipschitz mechanical systems"*, D. E. P. Vanpoucke and S. Wenmackers, *Chaos* **X**, YY-YY (2021) [ArXiv](https://arxiv.org/abs/2001.10375)</br>
 
 
