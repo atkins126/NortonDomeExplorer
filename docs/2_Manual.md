@@ -98,27 +98,27 @@ Setting up a simulation using the DomeExplorer GUI.</p>
 ### 2.2.1. Setting up a simulation
 All settings of a simulation can be found on the *simulation settings panel*, as indicated in the figure above.
  1. <b> Initial values:</b> The two initial conditions of the initial value problem at hand can be formulated in two ways. Either as the
- position at time *t=0* and the position after a first timestep (option **R0,R1**, or using the notation of the paper: **R<sub>n,0</sub>,R<sub>n,1</sub>**), or 
- as the position and velocity at *t=0* (option **R0,V0**).<br />
+ position at time *t*=0 and the position after a first timestep (option **R0,R1**, or using the notation of the paper: ***R*<sub>*n*,0</sub>,*R*<sub>*n*,1</sub>**), or 
+ as the position and velocity at *t*=0 (option **R0,V0**).<br />
  Depending on the selection, the recurrence relation given in [equation 4](3_ReferenceList.md#ref_DS1): 
- R<sub>n</sub>(m) = R<sub>n</sub>(m-1)<sup>a</sup>/n<sup>2</sup> + 2 R<sub>n</sub>(m-1) - R<sub>n</sub>(m-2), is initialised by two 
+ *R*<sub>*n*</sub>(*m*) = *R*<sub>*n*</sub>(*m*-1)<sup>*a*</sup>/*n*<sup>2</sup> + 2 *R*<sub>*n*</sub>(*m*-1) - *R*<sub>*n*</sub>(*m*-2), is initialised by two 
  initial positions directly, or by an initial position and a velocity, which is transformed into two initial positions. In practice, for both modes the
  same recurrence relation is iterated. However, the graphical representation in the *Plot Area* will either present initial pairs **(R0,R1)** or **(R0,V0)**
- depending on the mode.  
- 2. <b> Point 1/2 minimum and maximum values:</b> The DomeExplorer evaluates the recurrence relation for each initial value pair corresponding with a single 
+ depending on the mode.
+ 2. <b> Points 1 and 2, minimum and maximum values:</b> The DomeExplorer evaluates the recurrence relation for each initial value pair corresponding with a single 
  pixel in the 500x500 pixel *Plot Area* (*i.e.* 250 000 initial value pairs are considered). *Point 1* refers to **R0**, while *Point 2* refers to either **R1** or **V0**.
- For each pixel, the initial value pair is calculated as a linear 
- grid ranging in \[min,max\], as provided by the user. **Note:** As the pair **(R0,R1)=(0,0)** corresponds to the singular solution of the initial value problem, 
+ For each pixel, the initial value pair is calculated as a linear grid ranging in \[min,max\], as provided by the user. 
+ **Note:** As the pair **(R0,R1)=(0,0)** corresponds to the singular solution of the initial value problem, 
  which can be tought of as the only point with an infinite *T* value (or within the context of the DomeExplorer a value of Delta*T*\*(Maximum \# Iterations) ), 
  it is best to exclude it from the chosen intervals. Otherwise it will dominate the color scale, and one ends up with a black *Plot Area* with a single red pixel.
  3. <b> *a* value:</b> The power in the initial value problem of Malament's mound, given by [equation 1](3_ReferenceList.md#ref_DS1). Values are limited to the 
  range \]0,1\[. The special case of Norton's Dome is obtained by setting ***a*=0.5**.
- 4. <b> Delta*T*:</b> This is the discrete time step (also *1/n*, *cf.* [paper](3_ReferenceList.md#ref_DS1)) used in the recurrence relation. When modifying this
- variable, it is important to note that there exists a scaling relation between the time step (*1/n*) and the **R<sub>n</sub>** values: *n*<sup>-2/(1-*a*)</sup>. 
+ 4. <b> Delta*T*:</b> This is the discrete time step (also 1/*n*, *cf.* [paper](3_ReferenceList.md#ref_DS1)) used in the recurrence relation. When modifying this
+ variable, it is important to note that there exists a scaling relation between the time step (1/*n*) and the **R<sub>n</sub>** values: *n*<sup>-2/(1-*a*)</sup>. 
  In practice, this means that for Norton's dome (*a*=1/2), if one reduces Delta*T* by a factor of 10 and the maximum **R0,R1** values by a factor of 10 000, 
  the exact same picture is obtained.
  5. <b> Maximum \# Iterations:</b> The maximum number of iterations of the recurrence relation that are being calculated. Higher values provide a more accurate estimate 
- of the *delay time* **T**, corresponding to the time the mass starts sliding off the mound (in the continuous case). 
+ of the *delay time* ***T***, corresponding to the time the mass starts sliding off the mound (in the continuous case). 
  
 ![GUI_RunB](../images/NDE_Simulation.png)
 <p align="center" width=60%>
@@ -129,7 +129,7 @@ Once the settings are selected, the simulation can be run and results visualised
 
   6. <b> Run Simulation:</b> Pressing this button starts the simulation. Progess of the simulation can be tracked via the progressbar.
   7. <b> Draw *T*:</b> Once the simulation has finished, the *Time used* will be shown and the *Plot Area* will turn into a grey square. Then, the results for the  
-  *delay time* **T** can be visualised by pressing this button. The *color scale* indicates the largest and smallest values obtained in the entire presented
+  *delay time* ***T*** can be visualised by pressing this button. The *color scale* indicates the largest and smallest values obtained in the entire presented
   phase space.
   8. <b> Draw Flips/Draw Error Code:</b> Support functionality which for each pixel indicates how many times the path starting with these initial conditions 
   crosses the apex (**Flips**) or if any numerical errors were encountered (**Error Code**: 0=No error, 1=Division by zero, 2=Overflow, 
