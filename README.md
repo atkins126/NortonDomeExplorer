@@ -23,7 +23,7 @@ The Norton Dome Explorer GUI.</p>
 
 ### Citations
 If you use the NortonDomeExplorer in your research, we would appreciate a citation to the corresponding publication:
- - *"Assigning probabilities to non-Lipschitz mechanical systems"*, D. E. P. Vanpoucke and S. Wenmackers, *Chaos* **31**, 123131 (2021) [Chaos](https://doi.org/10.1063/5.0063388)  [ArXiv](https://arxiv.org/abs/2001.10375)</br>
+ - *"Assigning probabilities to non-Lipschitz mechanical systems"*, D. E. P. Vanpoucke and S. Wenmackers, *Chaos* **31**, 123131 (2021) [Chaos](https://doi.org/10.1063/5.0063388) / [ArXiv](https://arxiv.org/abs/2001.10375)</br>
 
 
 
