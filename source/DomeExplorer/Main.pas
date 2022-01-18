@@ -4,12 +4,20 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Spin, ExtCtrls, ComCtrls, types, Math,
+  Dialogs, StdCtrls, Spin, ExtCtrls, ComCtrls, types, Math, LCLIntf,
   colorlists, ExtDlgs, Menus,simulationClass, r0r1AbsSimClass, r0v0AbsSimClass;
 
 
 type
+
+  { TADTF }
+
   TADTF = class(TForm)
+    Label11: TLabel;
+    ExitMenu: TMenuItem;
+    HelpMenu: TMenuItem;
+    ManualLink: TMenuItem;
+    AboutMenu: TMenuItem;
     screen: TImage;
     GroupBox1: TGroupBox;
     Label1: TLabel;
@@ -48,6 +56,9 @@ type
     SaveImage1: TMenuItem;
     SavePicture: TSavePictureDialog;
     DomeFunctionChoice: TComboBox;
+    procedure AboutMenuClick(Sender: TObject);
+    procedure ExitMenuClick(Sender: TObject);
+    procedure ManualLinkClick(Sender: TObject);
     procedure RunSimClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure DrawFlipBtnClick(Sender: TObject);
@@ -92,7 +103,7 @@ implementation
 //we can manually change the stacksize in the *.dof file.
 // MinStackSize=16777216      16Mb
 // MaxStackSize=1073741824    1Gb
-{$M 22000000,1000000000}  //a space after the comma invalidates the command
+{$M+ 22000000,1000000000}  //a space after the comma invalidates the command
 {$R *.dfm}
 
 {
@@ -105,6 +116,7 @@ screen.Height:=maxy;
 TotalTime:=0;
 LastImageButton:=' --- NO BUTTON CLICKED --- ';
 DomeFunctionChoice.ItemIndex:=0;
+self.sim:=TSimulationClass.create();//A class needs to be created to allow for the FitTCheckBoxClick call
 self.FitTCheckBoxClick(Sender);
 end;
 {
@@ -127,7 +139,7 @@ Starts the timer with second accuracy.
 procedure TADTF.startTimer();
 begin
 LabelTime.Visible:=false;
-Tstart:=getTime();
+Tstart:=Now;
 end;
 
 {
@@ -137,7 +149,7 @@ procedure TADTF.stopTimer();
 var
    diffT: TDateTime;
 begin
-Tstop:=getTime();
+Tstop:=Now;
 diffT:=Tstop-Tstart;
 TotalTime:=TotalTime+diffT;
 Caption:='Norton Dome Explorer.           Total Used WallTime:'+TimeToStr(TotalTime);
@@ -207,6 +219,26 @@ progressbar.Visible:=false;
 FlipButtonStatus(true);
 StopTimer();
 end;//RunFunction
+{
+Exit the program.
+}
+procedure TADTF.ExitMenuClick(Sender: TObject);
+begin
+  application.Terminate;
+end;
+
+procedure TADTF.AboutMenuClick(Sender: TObject);
+begin
+  OpenURL('https://github.com/DannyVanpoucke/NortonDomeExplorer/');
+end;
+
+{
+Open the Github-page with the "user manual/help".
+}
+procedure TADTF.ManualLinkClick(Sender: TObject);
+begin
+  OpenURL('https://github.com/DannyVanpoucke/NortonDomeExplorer/blob/master/docs/2_Manual.md');
+end;
 
 {
 Draw the number of flips, before the end of the iteration, or fatal error.
@@ -228,7 +260,7 @@ for nr:=1 to maxx do
   end;
 l:=minintvalue(ll);
 h:=maxintvalue(hl);
-ds:=(h-l)/255.0;
+ds:=max((h-l)/255.0,1.0/255.0);//protect against zero-div
 SetColorScaleI(sender,l,h);
 
 for nrx:=1 to maxx do
@@ -253,9 +285,12 @@ s:string;
 begin
 
 str(min,s);
-CScaleMin.Caption:= s;
+CScaleMin.Caption:= Trim(s);
 str(max,s);
-CScaleMax.Caption:=s;
+CScaleMax.Caption:= Trim(s);
+self.CScaleMax.Left:=self.ColorScale.Left+trunc((self.ColorScale.Width-self.CScaleMax.Width)*0.5);
+self.CScaleMin.Left:=self.ColorScale.Left+trunc((self.ColorScale.Width-self.CScaleMin.Width)*0.5);
+
 CScaleMin.Visible:=true;
 CScaleMax.Visible:=true;
 
@@ -263,7 +298,7 @@ for nr:=0 to 255 do
       begin
       colorscale.Canvas.Pen.Color:=colors[nr];
       colorscale.Canvas.MoveTo(0,colorscale.Height-nr);
-      colorscale.Canvas.LineTo(15,colorscale.Height-nr);
+      colorscale.Canvas.LineTo(colorscale.Width,colorscale.Height-nr);
       end;
 end;
 
@@ -277,11 +312,9 @@ s:string;
 begin
 
 str(min:12:4,s);
-CScaleMin.Caption:= s;
-CScaleMin.Alignment:=taCenter;
+CScaleMin.Caption:= Trim(s);
 str(max:12:4,s);
-CScaleMax.Caption:=s;
-CScaleMax.Alignment:=taCenter;
+CScaleMax.Caption:= Trim(s);
 CScaleMin.Visible:=true;
 CScaleMax.Visible:=true;
 
@@ -349,7 +382,7 @@ begin
   ds:=(h/128.0);
 end;
 GetColorList(200,colors);
-SetColorScaleI(sender,trunc(l),trunc(h));
+SetColorScaleD(sender,l,h);
 
 for nrx:=1 to maxx do
   begin
@@ -357,7 +390,7 @@ for nrx:=1 to maxx do
     begin
     tmp:=sim.DomeEndPos[nrx,nry];
     //since this is intended to show the location of big numbers > +- x 10^100, stuff near zero is set to 0
-    if (abs(tmp)>=10.0) then flipc:=trunc(log10(abs(tmp))/ds)
+    if (abs(tmp)>=1.0) then flipc:=trunc(log10(abs(tmp))/ds)
     else flipc:=0;
 
     if  (tmp<0) then flipc:=-flipc;

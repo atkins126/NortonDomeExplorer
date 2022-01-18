@@ -1,8 +1,17 @@
 program Dome_v1_5_00;
 
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
+
 uses
-  Forms,
+{$IFnDEF FPC}
   windows,
+{$ELSE}
+  Interfaces,
+{$ENDIF}
+  Forms,
+  LCLIntf, LCLType, LMessages,
   Main in 'Main.pas' {ADTF},
   Colorlists in 'Colorlists.pas',
   Simulationclass in 'Simulationclass.pas',
